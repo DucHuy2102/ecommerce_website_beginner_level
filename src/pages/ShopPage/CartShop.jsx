@@ -10,12 +10,12 @@ import {
     ButtonGroup,
     Button,
 } from '@chakra-ui/react';
-import { ShopContext } from '../context/ShopContext';
+import { ShopContext } from '../../context/ShopContext';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
-const CartShopping = (props) => {
-    const { id, productImage, productName, price } = props.data;
+const CartShop = (props) => {
+    const { id, productImage, productName, description, price } = props.data;
     const { addToCart, cartItems } = useContext(ShopContext);
     const cartAmount = cartItems[id];
     return (
@@ -29,11 +29,7 @@ const CartShopping = (props) => {
                 />
                 <Stack mt='6' spacing='3'>
                     <Heading size='md'>{productName}</Heading>
-                    <Text>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore in totam provident earum
-                        expedita vel quisquam impedit id facere soluta reprehenderit ipsa repellat officia aliquam,
-                        error inventore veniam.
-                    </Text>
+                    <Text>{description}</Text>
                     <Text color='blue.600' fontSize='2xl'>
                         ${price}
                     </Text>
@@ -59,4 +55,4 @@ const CartShopping = (props) => {
     );
 };
 
-export default CartShopping;
+export default CartShop;

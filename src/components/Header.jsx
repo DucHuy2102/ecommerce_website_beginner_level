@@ -6,22 +6,22 @@ const Header = () => {
     const navList = (
         <ul className='mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6'>
             <Link to='/'>
-                <Typography as='li' variant='medium' color='white' className='p-1 font-normal hover:text-lg'>
+                <Typography color='white' className='p-1 font-normal hover:text-lg'>
                     <a className='flex items-center'>Home</a>
                 </Typography>
             </Link>
             <Link to='/about'>
-                <Typography as='li' variant='medium' color='white' className='p-1 font-normal hover:text-lg'>
+                <Typography color='white' className='p-1 font-normal hover:text-lg'>
                     <a className='flex items-center'>About</a>
                 </Typography>
             </Link>
             <Link to='/contact'>
-                <Typography as='li' variant='medium' color='white' className='p-1 font-normal hover:text-lg'>
+                <Typography color='white' className='p-1 font-normal hover:text-lg'>
                     <a className='flex items-center'>Contact</a>
                 </Typography>
             </Link>
             <Link to='/cart'>
-                <Typography as='li' variant='medium' color='white' className='p-1 font-normal hover:text-lg'>
+                <Typography color='white' className='p-1 font-normal hover:text-lg'>
                     <a className='flex items-center'>Cart</a>
                 </Typography>
             </Link>

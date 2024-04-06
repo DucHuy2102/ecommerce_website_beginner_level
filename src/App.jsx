@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Header, Footer } from './components/exportComponents';
-import { HomePage, CartPage } from './pages/exportPages';
+import { Header } from './components/exportComponents';
+import { ShopPage, CartPage } from './pages/exportPages';
 import { ShopContextProvider } from './context/ShopContext';
 
 const App = () => {
@@ -13,12 +13,9 @@ const App = () => {
 
                     {/* pages */}
                     <Routes>
-                        <Route path='/' element={<HomePage />} />
+                        <Route path='/' element={<ShopPage />} />
                         <Route path='/cart' element={<CartPage />} />
                     </Routes>
-
-                    {/* footer component */}
-                    {/* <Footer /> */}
                 </Router>
             </ShopContextProvider>
         </div>

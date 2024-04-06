@@ -1,7 +1,7 @@
-import { PRODUCTS } from '../products';
-import CartShopping from './CartShopping';
+import { PRODUCTS } from '../../products';
+import CartShopping from './CartShop';
 
-const HomePage = () => {
+const ShopPage = () => {
     return (
         <div className='w-full h-full mt-5 mb-5'>
             <div className='grid grid-cols-3 gap-y-5 place-items-center'>
@@ -13,4 +13,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default ShopPage;
